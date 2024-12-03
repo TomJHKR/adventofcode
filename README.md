@@ -23,11 +23,17 @@ I'm a cybersecurity professional, not a software developer, so don't expect the 
 ## 📂 Structure
 
 The repository is organized as follows:
+```
 ├── 2024/ # Year of the event
-│ ├── day-1/ # Solutions for Day 1 
+│ ├── day-1/ # Solutions for Day 1
+│ │ ├── day-1.py # Code for Day 1
+│ │ ├── input.txt # Input for Day 1
 │ ├── day-2/ # Solutions for Day 2 
+│ │ ├── day-2.py # Code for Day 2
+│ │ ├── input.txt # Input for Day 2
 │ ├── ... # Additional days 
 ├── README.md # This file
+```
 
 Each day's folder contains:
 - `input.txt`: The puzzle input for that day.
