@@ -1,8 +1,8 @@
 import os
 
-
 input = open("input.txt", "r")
 
+## Pretty straight forward
 left = []
 right = []
 
