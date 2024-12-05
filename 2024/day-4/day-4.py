@@ -13,8 +13,34 @@ DIRECTIONS = [
     [(-1, 1), (-2, 2), (-3, 3)],        # Diagonal backward down
 ]
 
+PART2_DIRECTIONS = [
+        #M S
+        # A
+        #M S
+        #     M        M       S     S
+        [(-1, -1,) ,(-1,1), (1,-1),(1,1)],
+        #S S
+        # A
+        #M M
+        #   M     M        S     S
+        [(-1,1),(1,1),(-1,-1),(1,-1)],
+    
+        #M M
+        # A
+        #S S
+        #MMSS
+        [(-1,-1),(1,-1),(-1,1),(1,1)],
+        #S M
+        # A
+        #S M
+        #MMSS
+        [(1,-1),(1,1),(-1,-1),(-1,1)]
+]
+
+
 WORD = "XMAS"
 WORD_LENGTH = len(WORD)
+WORD2 = "MMSS"
 
 matrix = [list(sub) for sub in open("input.txt", "r").readlines()]
 rows = len(matrix)
@@ -39,3 +65,21 @@ def find_xmax():
 
 total_found = find_xmax()
 print(total_found)
+
+
+def find_xmax2():
+    found = 0
+    for row in range(rows):
+        for col in range(cols):
+            if matrix[row][col] == WORD[2]:
+                for direction in PART2_DIRECTIONS:
+                    if all(
+                            is_valid(row + dr, col + dc) and 
+                            matrix[row + dr][col + dc] == WORD2[i]
+                            for i, (dr,dc) in enumerate(direction)
+                    ):
+                        found +=1
+    return found
+
+total2 = find_xmax2()
+print(total2)
