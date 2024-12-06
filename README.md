@@ -3,7 +3,7 @@
 Welcome to my solutions for [Advent of Code](https://adventofcode.com)! This repository contains my daily attempts at solving these fun and challenging programming puzzles, published every December leading up to Christmas.
 
 ## 🎬 Animations
-[Day-6](./2024/day-6/animation.mp4)
+[Day-6](./2024/day-6/animation.gif)
 
 ## 📜 About
 
