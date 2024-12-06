@@ -2,6 +2,9 @@
 
 Welcome to my solutions for [Advent of Code](https://adventofcode.com)! This repository contains my daily attempts at solving these fun and challenging programming puzzles, published every December leading up to Christmas.
 
+## 🎬 Animations
+[Day-6](./2024/day-6/animation.mp4)
+
 ## 📜 About
 
 [Advent of Code](https://adventofcode.com) is an annual event where programming enthusiasts tackle coding challenges designed to improve problem-solving skills. Each day, a new problem is unlocked with two parts to solve.
